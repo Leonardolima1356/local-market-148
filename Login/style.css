@@ -1,0 +1,97 @@
+:root{
+    --text: aliceblue;
+    --back: #050e2e;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back);
+    color: var(--text);
+}
+
+.container{
+    border: 2px solid var(--text);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    position: relative;
+    padding-top: 80px;
+}
+
+.img-logo{
+    position: absolute;
+    top: -15%;
+    border-radius: 100%;
+    border: 2px solid aliceblue;
+}
+
+input, button{
+    padding: 10px;
+    border-radius: 999px;
+    border: none;
+    background-color: transparent;
+    color: var(--text);
+    border: 2px solid var(--text);
+    width: 100%;
+}
+
+button:hover{
+    color: var(--back);
+    background-color: var(--text);
+}
+
+.key{
+    position: absolute;
+    right: 11px;
+    top: 9px;
+    opacity: 0.5;
+    transition: all 200ms ease-in-out;
+}
+
+.key:hover{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+}
+
+.error-div{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: lightpink;
+    color: var(--back);
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 999px;
+}
+
+.error-div button{
+    width: 100px;
+    background-color: var(--back);
+    border: 2px solid var(--back);
+}
+
+.error-div button:hover{
+    width: 100px;
+    background-color: var(--text);
+    border: 2px solid var(--text);
+}
